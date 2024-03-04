@@ -7,22 +7,36 @@ body {
     display: grid;
     align-items: center;
     height: 100vh;
+    background: linear-gradient(rgb(0 0 0 / 30%) 100%, transparent), url(sky.jpg) no-repeat fixed bottom center;
+    background-size: cover;
 }
 
 div {
     display: flex;
     flex-direction: column;
+    background-color: hsl(0deg 0% 0% / 38%);
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
 }
 
 h1 {
     margin: 0 auto;
+    padding-bottom: 0.5rem;
+    color: white;
 }
 
 form {
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 1rem;
+}
+
+form input {
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    border: 0;
 }
 
 .name {
@@ -38,4 +52,8 @@ form {
 .button {
     flex-grow: 1;
     flex-basis: 80px;
+    background-color: #0067AC;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
 }
